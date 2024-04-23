@@ -3,37 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моя сайт-візитка</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Простий Чат-бот</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <img src="Untitled.png" alt="Ваше фото" class="profile-picture">
-        <div class="content">
-            <h1>Вітаю, я Аліса!</h1>
-            <h2>Мої навички:</h2>
-            <div class="content1">
-            <p>Маю впевнені навички у програмуванні на мовах C++, C# та Python. У моєму досвіді включено розробку різноманітних проєктів. У мові C++ я ефективно використовую класи, наслідування та шаблони для реалізації ефективних та структурованих рішень. З мовою C# я працюю над розробкою програм для платформи .NET. У Python я володію досвідом роботи з аналізом даних та машинним навчанням за допомогою бібліотек, таких як NumPy, Pandas та PyTorch. Мої навички у програмуванні дозволяють мені ефективно реалізовувати різноманітні проєкти та швидко вирішувати завдання на базі потреби.Маю також досвід у веб-розробці за допомогою мов HTML та CSS. У моєму розумінні HTML я вмію створювати структуровані та семантично правильні сторінки, використовуючи різноманітні теги та їх атрибути. CSS дозволяє мені створювати привабливий та зрозумілий дизайн, зокрема, я володію навичками у створенні стилів, розташуванні елементів на сторінці та адаптивного дизайну для оптимального відображення на різних пристроях. Ці навички доповнюють мої вміння у програмуванні, дозволяючи мені створювати повноцінні веб-додатки та інтерфейси.</p>
-            </div>
-            <div class="contact-form">
-                <h2>Зв'яжіться зі мною:</h2>
-                <form action="https://formspree.io/f/mgegpnyk" method="POST">
-                    <label>
-                        Ваш email:
-                        <input type="email" name="email" required>
-                    </label>
-                    <label>
-                        Ваше повідомлення:
-                        <textarea name="message" rows="4" required></textarea>
-                    </label>
-                    <button type="submit">Відправити</button>
-                </form>
+    <div class="chat-container">
+        <div class="chat-box" id="chat-box">
+            <div class="chat-message bot-message">
+                Привіт! Як я можу допомогти?
             </div>
         </div>
-        <div class="footer">
-            <h2>Контактні дані:</h2>
-            <p>Телефон: +380636491015</p>
-        </div>
+        <input type="text" id="user-input" class="user-input" placeholder="Напишіть повідомлення...">
+        <button onclick="sendMessage()" class="send-button">Надіслати</button>
     </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>

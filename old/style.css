@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ffffff, #f8f8f8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:
+        radial-gradient(
+          110.35% 80.79% at 6% 103.92%,
+          rgb(12, 149, 223) 0%,
+          rgba(194, 6, 169, 0.527) 100%
+        ),
+        linear-gradient(
+          169.3deg,
+          rgba(205, 249, 232, 1) 15%,
+          rgba(205, 249, 232, 0) 46%
+        ),
+        radial-gradient(
+          123% 73% at 107% 96%,
+          rgba(253, 253, 253, 0.24) 20%,
+          rgb(236, 235, 232) 60%,
+          rgba(240, 189, 208, 1) 75%,
+          rgba(255, 129, 38, 0) 100%
+        ),
+        linear-gradient(
+          0deg,
+          rgb(115, 4, 119) 0%,
+          rgb(22, 13, 13) 100%
+        );
+    background-blend-mode: multiply, overlay, screen, normal;
+}
+
+
+.container {
+    max-width: 650px;
+    padding: 0px;
+    text-align: center;
+    background-color: #8a858573; /* Додано білий колір для контейнера */
+    border-radius: 20px; /* Опціонально: додано закруглені кути */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Опціонально: додана тінь */
+}
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+.content {
+    margin-top: 30px;
+
+}
+.content1{
+    text-align: justify;
+    padding: 30px;
+    margin-top: -40px;
+    font-size: large;
+}
+.contact-form label,
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 500px;
+    margin-left: 70px;
+    padding: 10px;
+    border: 1px solid #021d3b86;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #000000;
+    background-color: #ffffff41;
+}
+
+.contact-form button {
+    background-color: #03859c;
+    color: #000000;
+    border: none;
+    margin-left: 70px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background-color: #333333;
+}
+
+.footer {
+    margin-top: 20px;
+}
